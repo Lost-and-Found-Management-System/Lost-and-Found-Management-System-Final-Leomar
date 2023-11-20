@@ -4,7 +4,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "db_nt123-1";
+$dbname = "db_nt3102";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -105,7 +105,8 @@ $fullName = $_SESSION['usersign'];
         <h1>Welcome Admin!</h1>
 
         <label for="fullName" class="fullName">usersign:</label>
-        <input type="text" id="usersign" name="usersign" value="<?php echo htmlspecialchars($usersign); ?>" readonly>
+        <input type="text" id="usersign" name="usersign" value="<?php echo htmlspecialchars($fullName); ?>" readonly>
+
 
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" value="<?php echo htmlspecialchars($username); ?>" readonly>
