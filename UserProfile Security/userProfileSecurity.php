@@ -25,7 +25,7 @@ if (!isset($_SESSION['username'])) {
 
 // Retrieve user information from the session
 $username = $_SESSION['username'];
-$fullName = $_SESSION['full_name'];
+$fullName = $_SESSION['usersign'];
 ?>
 
 <!DOCTYPE html>
